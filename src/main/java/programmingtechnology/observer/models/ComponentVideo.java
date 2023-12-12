@@ -17,7 +17,7 @@ public class ComponentVideo extends Observer {
     public ComponentVideo(Subject subject, MediaView mediaView) {
         this.state = false;
         this.start = subject.getState();
-        this.file = new File("N:\\Student\\3 курс\\5 семестр\\Java\\Observer\\src\\main\\resources\\programmingtechnology\\observer\\video\\OneChance.mp4");
+        this.file = new File("N:\\Student\\3 курс\\5 семестр\\Java\\Observer\\src\\main\\resources\\programmingtechnology\\observer\\video\\Mr.Lambert.mp4");
         sound = new Media(file.toURI().toString());
         mediaPlayer = new MediaPlayer(sound);
         mediaView.setMediaPlayer(mediaPlayer);
