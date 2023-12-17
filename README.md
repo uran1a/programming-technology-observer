@@ -3,11 +3,11 @@
 Требуется реализовать программу в которой одни объект - выполняет некоторую задачу, а три другие отслеживают его состояния для реализации собственной функциональности выбраны следующие:
 - Таймер
 - Слайдер
-- Видеоплеер
+- Загрузочная линия
 
 ## Теоретическая справка
 Паттерн Наблюдатель (Observer) определяет зависимость "один-ко-многим" между объектами так, что при изменении состояния одного объекта все зависящие от него объекты уведомляются и обновляются автоматически.
 ## Диаграмма классов
-![class diagram](src/main/resources/programmingtechnology/observer/images/Structure.png)
+![class diagram](src/main/resources/programmingtechnology/observer/images/structure.png)
 ## Результат
 ![task1](src/main/resources/programmingtechnology/observer/gifs/result.gif)
