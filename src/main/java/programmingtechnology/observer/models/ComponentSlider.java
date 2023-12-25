@@ -31,11 +31,11 @@ public class ComponentSlider extends Observer {
     }
 
     @Override
-    public void update(Subject st) {
+    public void update() { // приходит же с сервера
         if(state){
-            if(st.getState() % 5 != 0)
+            //зачем снова запрашивать его же состояние
                 timeline.pause();
-            else if(st.getState() % 5 == 1)
+            else 
                 timeline.play();
         }
     }
