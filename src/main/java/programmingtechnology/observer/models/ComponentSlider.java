@@ -38,7 +38,7 @@ public class ComponentSlider extends Observer {
             timeline.pause();
     }
 
-    public void delComp(Subject subject) {
+    public void delComp() {
         timeline.stop();
         subject.detach(this);
     }
