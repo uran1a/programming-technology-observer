@@ -26,9 +26,9 @@ public class ComponentText extends Observer {
         dindon.setText("Прошло _ с");
     }
     @Override
-    public void update(Subject st){
+    public void update(){
         if(state){
-            text = "Прошло "+st.getState()+" c";
+            text = "Прошло "+this.subject.getState()+" c";
             dindon.setText(text);
         }
     }
