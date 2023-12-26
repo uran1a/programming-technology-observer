@@ -26,15 +26,15 @@ public class ComponentProgress extends Observer {
     }
 
     @Override
-    public void update() { //Subject же не используется
+    public void update() {
         if(state){
             progress = (progress + 1) % 10;
             progressBar.setProgress(progress / 10.0);
         }
     }
 
-    public void delComp(Subject subject) {
-        subject.detach(this); // Лучше возложить на сторонний компонент включение/ выключение
+    public void delComp() {
+        subject.detach(this);
     }
 
     public void onComp() {

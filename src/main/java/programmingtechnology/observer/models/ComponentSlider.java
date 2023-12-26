@@ -31,16 +31,14 @@ public class ComponentSlider extends Observer {
     }
 
     @Override
-    public void update(Subject st) {
-        if(state){
-            if(st.getState() % 5 != 0)
-                timeline.pause();
-            else if(st.getState() % 5 == 1)
-                timeline.play();
-        }
+    public void update() {
+        if(state)
+            timeline.play();
+        else
+            timeline.pause();
     }
 
-    public void delComp(Subject subject) {
+    public void delComp() {
         timeline.stop();
         subject.detach(this);
     }
