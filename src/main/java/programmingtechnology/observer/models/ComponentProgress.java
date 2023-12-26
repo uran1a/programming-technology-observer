@@ -26,14 +26,14 @@ public class ComponentProgress extends Observer {
     }
 
     @Override
-    public void update(Subject st) {
+    public void update() {
         if(state){
             progress = (progress + 1) % 10;
             progressBar.setProgress(progress / 10.0);
         }
     }
 
-    public void delComp(Subject subject) {
+    public void delComp() {
         subject.detach(this);
     }
 

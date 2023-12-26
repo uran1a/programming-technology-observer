@@ -60,8 +60,8 @@ public class MainController implements Initializable {
         cs = new ComponentSlider(subject, imageView);
     }
     private void delObs(){
-        ct.delComp(subject);
-        cp.delComp(subject);
-        cs.delComp(subject);
+        ct.delComp();
+        cp.delComp();
+        cs.delComp();
     }
 }
